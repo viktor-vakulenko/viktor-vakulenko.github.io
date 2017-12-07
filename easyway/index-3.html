@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact-form.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>  
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+		});
+	</script>
+	<!--<![endif]-->
+
+
+	<script src="js/TMForm.js"></script>
+	<script src="js/modal.js"></script>
+
+
+	<!--[if lt IE 9]>
+  <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script src="js/html5shiv.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
+</head>
+
+<body>
+
+	<!--========================================================
+														HEADER 
+	=========================================================-->
+	<header id="header">
+		<div id="stuck_container">
+			<div class="container">
+				<div class="row">
+					<div class="grid_6">
+						<h1><a href="index.html"><img src="images/logo.png" alt="logo"></a> </h1>
+					</div>
+					<div class="grid_6">
+						<nav>
+							<ul class="sf-menu">
+								<li><a href="index.html">Home<strong></strong></a></li>
+								<li><a href="index-1.html">About<strong></strong></a>
+									<ul class="submenu">
+										<li><a href="#">Aliquam congue</a>
+											<ul class="submenu2">
+												<li><a href="#">Elementum velit</a></li>
+												<li><a href="#">Consequat ante</a></li>
+												<li><a href="#">Lorem ipsum dol</a></li>
+												<li><a href="#">Sit amet</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Fermentum nisl</a></li>
+										<li><a href="#">Mauris accumsan </a></li>
+										<li><a href="#">Nulla vel diam</a></li>
+									</ul>
+								</li>
+								<li><a href="index-2.html">Services<strong></strong></a></li>
+								<li class="current" id="last-li"><a href="index-3.html">Contact Us<strong></strong></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--========================================================
+														CONTENT 
+	=========================================================-->
+	<section id="content">
+
+
+		<div class="container">
+			<h2 class="marTop10">How to Find Us</h2>
+
+			<section class="content_map">
+				<div class="google-map-api"> 
+					<div id="map-canvas" class="gmap"></div> 
+				</div> 
+			</section>
+
+			<p>Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+
+			<div class="col3">
+				<i class="fa fa-home icon3"></i>
+				<div class="box">
+					<p>8901 Marmora Road,<br>Glasgow, D04 89GR.</p>
+				</div>
+			</div>
+
+			<div class="col3 v2">
+				<i class="fa fa-phone icon3"></i>
+				<div class="box">
+					<p>+1 800 559 6580<br>+1 800 603 6035</p>
+				</div>
+			</div>
+
+			<div class="col3">
+				<i class="fa fa-envelope icon3"></i>
+				<div class="box">
+					<p><a href="mailto:" class="link">mail@demolink.org</a></p>
+				</div>
+			</div>
+
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+
+	</section>
+
+
+
+	<!--========================================================
+														FOOTER 
+	=========================================================-->
+	<footer id="footer">
+
+		<div class="box-4">
+			<div class="container">
+				<div class="row">
+					<div class="grid_3">
+						<h4 class="wow fadeInLeft">contact us</h4>
+
+						<form id="contact-form">
+							<div class="contact-form-loader"></div>
+							<fieldset>
+								<label class="name  wow fadeInLeft" data-wow-duration="" data-wow-delay="0.0s">
+									<input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  />
+									<span class="empty-message">*This field is required.</span>
+									<span class="error-message">*This is not a valid name.</span>
+								</label>
+							 
+								<label class="email  wow fadeInLeft" data-wow-duration="" data-wow-delay="0.1s">
+									<input type="text" name="email" placeholder="Email:" value="" data-constraints="@Required @Email" />
+									<span class="empty-message">*This field is required.</span>
+									<span class="error-message">*This is not a valid email.</span>
+								</label>
+								<!-- <label class="phone">
+									<input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" />
+									<span class="empty-message">*This field is required.</span>
+									<span class="error-message">*This is not a valid phone.</span>
+								</label> -->
+							 
+								<label class="message  wow fadeInLeft" data-wow-duration="" data-wow-delay="0.2s">
+									<textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+									<span class="empty-message">*This field is required.</span>
+									<span class="error-message">*The message is too short.</span>
+								</label>
+								<div class="btns  wow fadeInLeft" data-wow-duration="" data-wow-delay="0.3s">
+									<!-- <a href="#" class="more_btn" data-type="reset">Clear</a> -->
+									<a href="#" class="more_btn" data-type="submit">send message</a>
+								</div>
+							</fieldset> 
+							<div class="modal fade response-message">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title">Modal title</h4>
+										</div>
+										<div class="modal-body">
+											You message has been sent! We will be in touch soon.
+										</div>      
+									</div>
+								</div>
+							</div>
+						</form>
+
+					</div>
+
+					<div class="grid_3 wow fadeInRight" data-wow-duration="" data-wow-delay="0.2s">
+						<h4>categories</h4>
+						<ul class="list2">
+							<li><a href="#">Local Moving</a></li>
+							<li><a href="#">Long Distance Moving</a></li>
+							<li><a href="#">Storage</a></li>
+							<li><a href="#">Moving Special Items</a></li>
+							<li><a href="#">Moving Supplies</a></li>
+						</ul>
+					</div>
+
+					<div class="grid_3 wow fadeInRight" data-wow-duration="" data-wow-delay="0.4s">
+						<h4>how to find us</h4>
+						<ul class="list3">
+							<li><i class="fa fa-map-marker"></i> <span class="list3_txt">8901 Marmora Road,<br>Glasgow, D04 89GR.</span></li>
+							<li><i class="fa fa-phone"></i> <span class="list3_txt">Call us now toll free: 0123-456-789</span></li>
+							<li><i class="fa fa-envelope-o"></i> <span class="list3_txt">Email: <a href="mailto:">mail@demolink.org</a></span></li>
+						</ul>
+
+						<h4 class="marTop6">Follow us</h4>
+						<ul class="list3">
+							<li><i class="fa fa-facebook"></i> <span class="list3_txt"><a href="#" >Facebook</a></span></li>
+							<li><i class="fa fa-twitter"></i> <span class="list3_txt"><a href="#">Twitter</a></span></li>
+							<li><i class="fa fa-rss"></i> <span class="list3_txt"><a href="#">RSS</a></span></li>
+						</ul>
+
+					</div>
+
+					<div class="grid_3 wow fadeInRight" data-wow-duration="" data-wow-delay="0.6s">
+						<h4>About US</h4>
+						<p class="marTop5">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. <br>Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. </p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<p class="txt_priv wow fadeInLeft">Easy Way &copy; <span id="copyright-year"></span> All Rights Reserved   |   <a href="index-4.html">Privacy Policy</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+<script src="js/script.js"></script>
+
+
+
+<script type="text/javascript"> 
+	google_api_map_init();
+	function google_api_map_init(){
+		var map;
+		var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14)); 
+		var marker;
+
+		var styleArray = [
+		{
+				"featureType": "water",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 17
+						}
+				]
+		},
+		{
+				"featureType": "landscape",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 20
+						}
+				]
+		},
+		{
+				"featureType": "road.highway",
+				"elementType": "geometry.fill",
+				"stylers": [
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 17
+						}
+				]
+		},
+		{
+				"featureType": "road.highway",
+				"elementType": "geometry.stroke",
+				"stylers": [
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 29
+						},
+						{
+								"weight": 0.2
+						}
+				]
+		},
+		{
+				"featureType": "road.arterial",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 18
+						}
+				]
+		},
+		{
+				"featureType": "road.local",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 16
+						}
+				]
+		},
+		{
+				"featureType": "poi",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 21
+						}
+				]
+		},
+		{
+				"elementType": "labels.text.stroke",
+				"stylers": [
+						{
+								"visibility": "on"
+						},
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 16
+						}
+				]
+		},
+		{
+				"elementType": "labels.text.fill",
+				"stylers": [
+						{
+								"saturation": 36
+						},
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 40
+						}
+				]
+		},
+		{
+				"elementType": "labels.icon",
+				"stylers": [
+						{
+								"visibility": "off"
+						}
+				]
+		},
+		{
+				"featureType": "transit",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 19
+						}
+				]
+		},
+		{
+				"featureType": "administrative",
+				"elementType": "geometry.fill",
+				"stylers": [
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 20
+						}
+				]
+		},
+		{
+				"featureType": "administrative",
+				"elementType": "geometry.stroke",
+				"stylers": [
+						{
+								"color": "#000000"
+						},
+						{
+								"lightness": 17
+						},
+						{
+								"weight": 1.2
+						}
+				]
+		}
+]
+
+		var markerIcon = { 
+				url: "images/gmap_marker.png", 
+				size: new google.maps.Size(42, 65), 
+				origin: new google.maps.Point(0,0), 
+				anchor: new google.maps.Point(21, 70) 
+		};
+
+		function initialize() { 
+			var mapOptions = { 
+				zoom: 14, 
+				center: coordData, 
+				scrollwheel: false, 
+				// styles: styleArray 
+			}
+
+			var contentString = "<div></div>"; 
+			var infowindow = new google.maps.InfoWindow({ 
+				content: contentString, 
+				maxWidth: 200 
+			});
+			 
+			var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions); 
+			marker = new google.maps.Marker({ 
+				map:map, 
+				draggable:true, 
+				position: coordData, 
+				icon: markerIcon 
+			});
+			
+		}
+		google.maps.event.addDomListener(window, "load", initialize); 
+	}
+</script>
+
+
+</body>
+</html>

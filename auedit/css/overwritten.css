@@ -1,0 +1,41 @@
+body {
+	background-color:#444;
+	color:#5A8790;
+}
+button {
+/*	color: orange;*/
+}
+
+element {
+	width:inherit;
+}
+.slider.slider-horizontal {
+  width: 210px !important;
+ }
+
+ .modal-body {
+  position: relative;
+  width:600px;
+  padding: 20px;
+}
+
+ .downRow {
+  position: relative;
+  width:100px;
+  margin:auto !important;
+}
+
+#drop {
+  background-color:#111;
+}
+
+#waveform {
+  background-color:#000;  
+}
+
+#overlay {
+/*  background-color:#fff000;*/
+}
+
+.container {
+}

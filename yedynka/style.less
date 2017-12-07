@@ -1,0 +1,321 @@
+/*................................less.....................*/
+@coloryellow:#fcdb00;
+/*................................preloader.....................*/
+#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: lighten(@coloryellow,-60%);
+z-index: 30;}
+  
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 68%;
+margin-left:-125px;
+margin-top:-75px;
+color:#000;
+font-size:80px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(img/oval.svg) center center no-repeat;
+background-size:41px;    
+margin: -16px 0 0 -16px;}
+/*................................reset...........................................*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+// 
+/*................................clearfix...........................................*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/*.........GLOBLE......*/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #898989;
+	font-weight: 400;
+}
+h2 {
+	font-weight: 700;
+	font-size: 32px;
+	color: #010101;
+	line-height: 34px;
+	text-align: center;
+}
+p.top{
+	color:#898989;
+	font-size:20px;
+	line-height:24px;
+	text-align:center;
+	margin:20px 0 70px;	
+}
+header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	width: 100%;
+	padding: 60px 0;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+header.sticky {
+	position: fixed;
+	width: 100%;
+	background: @coloryellow;
+	box-shadow: 3px 1px 0.99px 0.01px rgba(0, 0, 0, 0.05);
+	padding: 20px 0px;
+	    z-index: 89;
+}
+header a.logo {
+	padding-top: 10px;
+	display: block;
+}
+header a.logo img {
+	display: block;
+}
+.logo {
+	width: 70%;
+	float: left;
+	text-align:center;
+}
+nav {
+	width: 20%;
+	float: right;
+	text-align: right;
+	padding-top:10px;
+}
+.menuside {
+	width: 10%;
+	float: left;
+	text-align: left;
+	padding-top:10px;
+}
+nav ul li {
+	display: inline-block;
+	padding: 0px 10px;
+}
+nav ul li a {
+	font-size: 20px;
+	line-height: 30px;
+	color: #212121;
+	& hover {
+	color: #999;
+	transition: all 0.5s;
+}
+}
+
+
+#banner {
+	background: @coloryellow;
+	padding: 360px 0 50px;
+	text-align: center;
+	position: relative;
+}
+#banner h1 {
+	font-size
+	: 48px;
+	line-height: 60px;
+	font-weight: 900;
+	color:#222222;
+}
+#banner p {
+	color:#222222;
+	font-size:20px;
+	line-height:24px;
+	margin:20px 0 40px;
+}
+#banner a.start {
+	width: 256px;
+	height: 56px;
+	line-height: 56px;
+	border: 2px solid #000000;
+	color: #000000;
+	font-size:22px;
+	display: block;
+	margin:0 auto 180px;
+	text-align: center;
+	font-weight: 700;
+}
+#banner a.start:hover {
+	color: #fff;
+	background: #232323;
+	transition: all 0.5s;
+}
+#banner a i{color:#000; font-size:34px;}
+#features{padding:110px 0;}
+#features h3{font-size:22px; line-height:24px; font-weight:700; color:#010101;}
+#features i{font-size:50px; text-align:center; display:block; color:#010101;}
+#bottom p{padding:13px 0 80px;}
+
+#pricing{padding:40px 0 150px; text-align:center;}
+#pricing article i{font-size:48px; color:#010101; height:100px; width:100px; border-radius:50%; line-height:100px; background:#ebebeb;}
+#pricing article h3{font-size:24px; line-height:24px; font-weight:700; color:#010101; margin:22px 0 15px;}
+#pricing article  p.small{font-size:14px; color:#898989; padding-bottom:36px;}
+#pricing article h4{font-size:32px; line-height:24px; font-weight:700; color:#010101;}
+
+#pricing article span.line{ width:50px; height:2px; background:#010101; display:inline-block;}
+#pricing article a{width:140px; height:47px; line-height:47px; border:2px solid #010101; font-weight:700; display:block; color:#010101; margin:34px auto 20px;}
+#pricing article a:hover{background:#010101; color:#fff; transition:all 0.5s;}
+#pricing article:hover i{background:#010101;color:#fff;}
+#work{padding: 40px 0 150px;}
+#work article h3{ font-size:22px; font-weight:700; color:#010101; line-height:24px; text-align:center; margin-top:17px;}
+#work article p{text-align:center; padding-bottom:65px;}
+
+
+.mainimg{position:relative;}
+.mainimg img{display:block; width:100%;}
+.mainimg{width:100%; display:block;}
+.halfleft{width:50%; float:left; font-size:14px; color:#fff;}
+.halfright{width:50%; float:right; text-align:right; font-size:14px; color:#fff;}
+.match{position:absolute; left:10px; right:10px; bottom:10px; z-index:9998; }
+
+.imgDescription2 {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  background:  #000;
+  color: #fff;
+	width:100%;
+	height:auto;
+font-size:18px;
+	font-weight:400;
+	text-align:center;
+  visibility: hidden;
+  opacity: 0;
+  padding-top:80px;
+  transition:all 0.5s;
+  cursor:pointer;
+
+}
+.mainimg:hover .imgDescription2 {
+  visibility: visible;
+  opacity: 1;
+}
+.imgDescription2 i{font-size:50px;}
+
+#team{padding:50px 0 155px; text-align:center;}
+#team article span{display:block; font-size:14px; line-height:18px; color:#313841; margin-bottom:10px;}
+#team article h3{ font-size:22px;color:#010101; line-height:24px; text-align:center; margin-top:35px; margin-bottom:5px;}
+#team article p{text-align:center; padding-bottom:10px;}
+#team article a i{font-size:16px; color:#010101; margin:0 4px;}
+#states{padding-bottom:75px; text-align:center;}
+#states article i{font-size:50px; color:#010101; display:block; }
+#team article a i:hover{color:@coloryellow; transition:all 0.5s;}
+#states article h3{ font-size:24px;color:#010101; font-weight:700; line-height:24px; text-align:center; margin-top:15px;}
+#states article p{text-align:center; padding-bottom:10px; font-size:14px;}
+#testimonilas{text-align:center; margin-bottom:200px;}
+#testimonilas h3{font-size:22px; margin-top:10px; color:#010101; margin-bottom:5px;}
+#testimonilas span{display:block; margin-bottom:25px;}
+#testimonilas p{display:inline-block; font-size:20px; color:#898989;}
+i.onemore {
+    text-align: left;
+    position: relative;
+    top: -40px;
+    left: -35px;
+    font-size: 20px;
+    color: #010101;
+}
+i.twomore{text-align:right; position: relative;
+    right: -35px;
+    font-size: 20px;
+    color: #010101;}
+#contact{padding-bottom:75px; text-align:center;}
+#contact i{font-size:22px; color:#010101;}
+
+#contact h3{font-size:24px; margin-top:15px; color:#010101; margin-bottom:5px;}
+#contact span{font-size:14px; line-height:16px; display:block; margin-bottom:40px;}
+
+#contact form{max-width:480px; width:100%; margin:0 auto;}
+#contact form input , #contact form textarea{width:100%; outline:0; border:2px solid #010101; margin-bottom:25px; padding:13px; color:#010101;}
+#contact form textarea{height:200px;}
+#contact form a{width:170px; height:51px; line-height:51px; background:#010101; color:#fff; font-weight:700; text-transform:uppercase;display:block; margin:0 auto;}
+#contact form a:hover{background:@coloryellow; color:#010101; transition:all 0.5s;}
+footer{padding:90px 0 277px; background:#010101;}
+footer h2{color:#fff;}
+footer p.top{margin-bottom:35px;}
+.mesg{max-width:740px; width:100%; display:block; margin:0 auto 110px;}
+footer .mesg input{width:78%; background:#fff; border:0; padding:13px; outline:0; height:51px;}
+footer .mesg button{width:135px; margin-left:10px; background:#fff; border:0; outline:0; height:52px; line-height:49px; color:#010101; font-weight:700;}
+footer .mesg button:hover{background:@coloryellow;}
+footer a , footer address{display:block; color:#fff;}
+footer a:hover{color:@coloryellow;}
+.active {
+	color: #999;
+}
+
+
+/* New */
+
+.os-animation {
+	opacity: 0;
+}
+.os-animation.animated {
+	opacity: 1;
+}
+.staggered-animation {
+	opacity: 0;
+}
+.staggered-animation.animated {
+	opacity: 1;
+}
+/*LOADER EFFECT*/
+/*Paste this css to your style sheet file or under head tag*/
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+// .se-pre-con {
+//  position: fixed;
+//  left: 0px;
+//  top: 0px;
+//  width: 100%;
+//  height: 100%;
+//  z-index: 9999;
+//  background: @coloryellow;
+// }
+
+
+// .cssload-container{
+// 	display: block;
+// 	margin:49px auto;
+// 	width:97px;
+// 	top:50%;
+// 	position:relative;
+// }
+

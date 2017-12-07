@@ -1,0 +1,59 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW3ha8Nkxvfn1h1gaIw0N7bYF8pRwfffI" type="text/javascript"></script>
+
+    <script>
+
+        var mark = [{ LatLang: { lat: 50.464711, lng: 30.374065 },  description: " <p>Киев<br> ул. Академика Крымского, 4-А<br>офис 117<br>044 455 7898; 067 246 7225</p>" },
+    { LatLang: { lat: 49.240244, lng: 28.520615 }, description: "<p>Винница<br>ул. Максима Шимка, 56<br>офис 302<br>067 246 7445</p>" },
+
+        ];
+
+        function e() {
+            var centerLatLng = { lat: 50.063768, lng: 29.904968 };
+            var e = document.getElementById("map"),
+            t = {
+                center: centerLatLng,
+                zoom: 7,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var gmap = new google.maps.Map(e, t);
+            var image = 'http://s016.radikal.ru/i336/1611/56/a709c5b2cc24.png';
+            var marker = [], infowindow=[];
+            for (i = 0; i < 4; i++) {
+                marker[i] = new google.maps.Marker({
+                    position: mark[i].LatLang,
+                    map: gmap,
+                    title: mark[i].description,
+                    icon: image
+
+                });
+                marker[i].setMap(gmap);
+
+                infowindow[i] = new google.maps.InfoWindow({
+                         content: mark[i].description
+                });
+                marker[i].id = i;
+                marker[i].addListener('click', function () {
+                    infowindow[this.id].open(gmap, this);
+                });
+
+
+            }
+        //    var markerClusterer = new MarkerClusterer(_this.map, marker,
+        //         {
+        //          maxZoom: 13,
+		
+        //          gridSize: 50,
+        //          styles: null
+        //     });
+
+        };
+        google.maps.event.addDomListener(window, 'load', e);
+
+
+    </script>
+</head>
+<body>
+    <div id="map" style="width: auto; height: 500px;">
+    </div>
+
+</body>
